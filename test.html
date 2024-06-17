@@ -1,17 +1,68 @@
 <!DOCTYPE html>
 <html>
-<body>
-    
-<p>HI KhiemAudio</p>
-<a href="https://khiemaudio.com" target="_blank">Visit KhiemAudio</a> 
+    <body>
+        <style>
+            .box_login{
+                margin: auto;
+                width: 300px;
+                height: 200px;
+                border: 2px solid #027837;
+                border-radius: 30px;
+            }
+            .text_login{
+                color: #136a1a;
+                text-align: center;
+                font-size: 25px;
+            }
+            .box_input{
+                margin: auto;
+                width: 250px;
+                height: 20px;
+                border: 2px solid #000000;
+                border-radius: 10px;
+                padding: 5px;
+            }
+            .box_input:hover{
+                border: 2px solid #027837;
+            }
+            .box_onclick{
+                margin: auto;
+                width: 80px;
+                height: 20px;
+                border: 2px solid #000000;
+                border-radius: 10px;
+                background-color: #0657f9;
+                color: aliceblue;
+                padding: 5px;
 
-<script>
-    localStorage.setItem('AIR', '1');
-    var values = localStorage.getItem('AIR');
-        console.log(values);
-    document.cookie = "username=John Doe";
-        let x = document.cookie;
-        console.log(x);
-</script>
-</body>
+            }
+        </style>
+        <div class="box_login">
+            <div class="text_login"> Login </div>
+            <div style="margin-left: 20px;">
+                Name:
+                <input class="box_input" type="text" id="id_name">
+                Password:
+                <input class="box_input" type="password" id="id_pass">
+            </div>
+            <div style="margin-top: 20px;">
+                <div class="box_onclick">
+                    New
+                </div>
+                <div class="box_onclick">
+                    Login
+                </div>
+            </div>
+            <a href="">Quen mat khau</a>
+            
+        </div>
+        <script>
+            localStorage.setItem('AIR', '1');
+            var values = localStorage.getItem('AIR');
+                console.log(values);
+            document.cookie = "username=John Doe";
+                let x = document.cookie;
+                console.log(x);
+        </script>
+    </body>
 </html>
